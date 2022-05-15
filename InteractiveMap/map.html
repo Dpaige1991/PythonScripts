@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_543f03fcfc4f46deb5a981941892bd3f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_543f03fcfc4f46deb5a981941892bd3f" ></div>
+        
+</body>
+<script>    
+    
+            var map_543f03fcfc4f46deb5a981941892bd3f = L.map(
+                "map_543f03fcfc4f46deb5a981941892bd3f",
+                {
+                    center: [29.598905207229713, -95.6271957200079],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2761727534e1458491fe727a22a7b6c0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_543f03fcfc4f46deb5a981941892bd3f);
+        
+    
+            var marker_59057a87d41e4f1c97ede31f63670c34 = L.marker(
+                [29.598905207229713, -95.6271957200079],
+                {}
+            ).addTo(map_543f03fcfc4f46deb5a981941892bd3f);
+        
+    
+            var icon_9455d069a46f4e24a970e3bdfbc3dd3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "red", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_59057a87d41e4f1c97ede31f63670c34.setIcon(icon_9455d069a46f4e24a970e3bdfbc3dd3b);
+        
+    
+        var popup_411cb5c259df41abb503253339e9cd84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ba66b7dbbd74dbabe33ab7d6218f6c6 = $(`<div id="html_9ba66b7dbbd74dbabe33ab7d6218f6c6" style="width: 100.0%; height: 100.0%;"><h1>My favorite place to eat</h1><img scr = 'Pinpoint.jpg' width=400px><p>Best Pizza Spot</p></div>`)[0];
+            popup_411cb5c259df41abb503253339e9cd84.setContent(html_9ba66b7dbbd74dbabe33ab7d6218f6c6);
+        
+
+        marker_59057a87d41e4f1c97ede31f63670c34.bindPopup(popup_411cb5c259df41abb503253339e9cd84)
+        ;
+
+        
+    
+    
+            marker_59057a87d41e4f1c97ede31f63670c34.bindTooltip(
+                `<div>
+                     My Favorite Food Spot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c5e6caed4d64786b043bf27d9775668 = L.marker(
+                [29.58703600651286, -95.62729880743488],
+                {}
+            ).addTo(map_543f03fcfc4f46deb5a981941892bd3f);
+        
+    
+        var custom_icon_fb985bbaf34a419a96029e550e0bc28f = L.icon({"iconSize": [35, 35], "iconUrl": "data:image/png;base64,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"});
+        marker_1c5e6caed4d64786b043bf27d9775668.setIcon(custom_icon_fb985bbaf34a419a96029e550e0bc28f);
+        
+    
+        var popup_3ef1719eab2b4d96837ee99aab28eb84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6b3d7d1c8a24957ab9534d49ce2e68b = $(`<div id="html_f6b3d7d1c8a24957ab9534d49ce2e68b" style="width: 100.0%; height: 100.0%;"><h1>My favorite movie theater to visit</h1><p>Best Movie Spot</p></div>`)[0];
+            popup_3ef1719eab2b4d96837ee99aab28eb84.setContent(html_f6b3d7d1c8a24957ab9534d49ce2e68b);
+        
+
+        marker_1c5e6caed4d64786b043bf27d9775668.bindPopup(popup_3ef1719eab2b4d96837ee99aab28eb84)
+        ;
+
+        
+    
+    
+            marker_1c5e6caed4d64786b043bf27d9775668.bindTooltip(
+                `<div>
+                     My Favortie Movie Spot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4859f1f349fa4c839a32c39ba1fc552f = L.circle(
+                [29.615311218229433, -95.64336011270625],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
+            ).addTo(map_543f03fcfc4f46deb5a981941892bd3f);
+        
+    
+        var popup_3cab045961164016b49af9e4d5be33a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31853195aa47458a8fb7485e4640b029 = $(`<div id="html_31853195aa47458a8fb7485e4640b029" style="width: 100.0%; height: 100.0%;">Love Sugarland</div>`)[0];
+            popup_3cab045961164016b49af9e4d5be33a5.setContent(html_31853195aa47458a8fb7485e4640b029);
+        
+
+        circle_4859f1f349fa4c839a32c39ba1fc552f.bindPopup(popup_3cab045961164016b49af9e4d5be33a5)
+        ;
+
+        
+    
+</script>
